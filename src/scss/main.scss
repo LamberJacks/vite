@@ -1,19 +1,7 @@
 @use './mixins/index' as *;
+@use './base/index' as *;
+@use './globals/index' as *;
 
 @mixin trasitionDef($val: 0.4s) {
   transition: $val 0.4s;
-}
-
-body {
-  background: #000;
-  @include flexbox(center, center, column);
-  height: 100vh;
-  h1 {
-    display: block;
-    color: antiquewhite;
-    @include trasitionDef(0.3s);
-    &:hover {
-      color: rgb(222, 135, 135);
-    }
-  }
 }
